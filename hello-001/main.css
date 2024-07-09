@@ -1,41 +1,59 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
 html {
-    height: 100vh;
+  height: 100vh;
 }
 body {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 form {
-    width: 70%;
+  width: 70vw;
 }
 fieldset {
-    padding: 2rem;
-    border-radius: 20px;
+  padding: 2rem;
+  border-radius: 20px;
 }
 legend {
-    margin: 5px;
-    text-align: center;
+  padding: 15px;
+  text-align: center;
+  color: #5555de;
+  font-weight: bold;
 }
-form label {
 
+form div {
+  width: 90%;
+  margin: 5px auto;
+  display: flex;
+}
+form label,
+form input {
+  padding: 8px;
+}
+
+form label {
+  flex: 1;
+  text-align: right;
+  color: #5454d4;
 }
 form input {
-    flex: 3;
-    border-radius: 20px;
-    outline: none;
-    border: 1px solid #777;
+  flex: 3;
+  border-radius: 20px;
+  outline: none;
+  border: 1px solid #777;
 }
+
 form input:hover {
-    background-color: #ddd;
-    cursor: pointer;
+  background-color: #ddd;
+  cursor: pointer;
 }
 form input:focus {
-    border: ipx solid blue;
+  border: 1px solid blue;
 }
