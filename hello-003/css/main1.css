@@ -26,20 +26,24 @@ section.main {
     justify-content: center;
 
     .th_img {
-        border: 1px solid #c0c0c0;
         width: 200px;
-        margin: 10px;
-        padding: 3px;
-        border-radius: 10px;
+        padding: 5px;
 
         img {
             width: 95%;
             border-radius: 10px;
+            transition: 0.7s;
+            &:hover {
+                cursor: pointer;
+                opacity: 0.6;
+            }
         }
         figcaption {
             font-weight: bold;
             color: blue;
+            transition: 0.7s;
             &:hover {
+                cursor: pointer;
                 color: #888;
             }
         }
