@@ -1,0 +1,48 @@
+header {
+    background-color: #777;
+    color: white;
+    text-align: center;
+    padding: 1.3rem;
+    text-shadow: 1px 1px 1px black;
+}
+
+section.main {
+    background-image: url("../images/dogs/paper.gif");
+    background-repeat: repeat;
+    text-align: center;
+
+    display: flex;
+    /*
+        flex box 내부의 item들은 기본적으로 가로방향으로 한줄 표현이 됨
+        화면의 가로크기가 조절되는 경우 적당한 크기로 줄바꿈되어 여러줄에
+        표현되도록 설정함
+    */
+    flex-wrap: wrap;
+    /* item 들을 적당히 조절하기 */
+    justify-content: space-between;
+
+    .th_img {
+        border: 1px solid #c0c0c0;
+        width: 200px;
+        margin: 10px;
+        padding: 3px;
+        border-radius: 10px;
+
+        img {
+            width: 95%;
+            border-radius: 10px;
+        }
+        figcaption {
+            font-weight: bold;
+            color: blue;
+            &:hover {
+                color: #888;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: #aaa;
+    text-align: center;
+}
