@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html {
+            width: 100vw;
+            height: 100vh;
+        }
+        body {
+            height: 100%;
+        }
+        a { 
+            text-decoration: none;
+            color: inherit;
+        }
+        header.main {
+            display: flex;
+        }
+        header.main div {
+            padding: 1.2rem;
+        }
+        header.main div:nth-of-type(1) {
+            flex: 1;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+        header.main div:nth-of-type(2) {
+            flex: 3;
+            text-align: center;
+        }
+        header.main div:nth-of-type(3) {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+        nav {
+            background-color: blueviolet;
+            color: white;
+            padding: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="main">
+        <div>
+          <img
+            src="./images/logo.png"
+            width="150px"
+            height="100px"
+            alt="logo"
+          />
+        </div>
+        <div>
+          <h1></h1>
+        </div>
+        <div>
+          <a href="./login.html">로그인</a>
+          <a href="./join.html">회원가입</a>
+          <a href="./mypage.html">정보수정</a>
+          <a href="./site.html">사이트웹</a>
+          <a href="./community.html">커뮤니티</a>
+        </div>
+      </header>
+    <nav>
+        <a href="#">회사소개</a>
+        <a href="#">제품소개</a>
+        <a href="#">고객지원</a>
+        <a href="#">비즈니스</a>
+    </nav>
+    <div></div>
+    <section class="main">
+        <article class="th_img">
+            <img src="./images/slide.jpg" alt="갤럭시s9카카오">
+        </article>
+        <article class="th_img">
+            <img src="./images/p1.jpg" alt="갤럭시폰1" width="100%">
+        </article>
+        <article class="th_img">
+            <img src="./images/p2.jpg" alt="갤럭시폰2" width="100%">
+        </article>
+        <article class="th_img">
+            <img src="./images/p3.jpg" alt="갤럭시폰3" width="100%">
+        </article>
+    </section>
+</body>
+</html>
